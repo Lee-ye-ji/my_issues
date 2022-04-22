@@ -1,8 +1,10 @@
 ![image](https://user-images.githubusercontent.com/59958929/164444258-75f4cf64-26df-4de3-ad85-aadc3202c7bc.png) </br>
+
+## Cause of error
 이 오류는 map함수를 이용해서 부모 컴포넌트에서 자식 컴포넌트로 props를 보낼 때 나는 오류이다.
 즉, [{...}, {...}, {...}] 해당되는 데이터를 map함수를 이용해서 {...} 객체 형식으로 props를 보낼 때 타입 오류에 해당되는 내용이다.
 
-# Solved
+# Solution
 `부모.tsx`
 ```tsx
 function SearchPage(): JSX.Element {
